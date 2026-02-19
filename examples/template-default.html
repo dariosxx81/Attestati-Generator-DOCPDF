@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Attestato</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .certificate-container {
+            width: 277mm;
+            min-height: 190mm;
+            background-color: white;
+            padding: 25mm;
+            border: 12px double #1e293b;
+            position: relative;
+            text-align: center;
+        }
+
+        .decoration {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            right: 15px;
+            bottom: 15px;
+            border: 2px solid #6366f1;
+        }
+
+        .header h1 {
+            font-size: 52px;
+            color: #1e293b;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            margin-top: 30px;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            font-size: 22px;
+            color: #64748b;
+            margin-bottom: 40px;
+        }
+
+        .present {
+            font-size: 18px;
+            font-style: italic;
+            color: #64748b;
+            margin-bottom: 15px;
+        }
+
+        .name {
+            font-size: 42px;
+            color: #6366f1;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e2e8f0;
+            display: inline-block;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .course-info {
+            font-size: 20px;
+            color: #1e293b;
+            margin-top: 25px;
+            margin-bottom: 50px;
+        }
+
+        .course-name {
+            font-size: 26px;
+            font-weight: bold;
+            display: block;
+            margin-top: 12px;
+            color: #1e293b;
+        }
+
+        .footer-section {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+            margin-top: 40px;
+        }
+
+        .signature-box {
+            width: 200px;
+            border-top: 1px solid #1e293b;
+            padding-top: 10px;
+            font-size: 14px;
+            color: #64748b;
+        }
+
+        .date-box {
+            font-size: 16px;
+            color: #1e293b;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="certificate-container">
+        <div class="decoration"></div>
+
+        <div class="header">
+            <h1>Attestato</h1>
+            <div class="subtitle">di partecipazione</div>
+        </div>
+
+        <div class="content">
+            <div class="present">Si certifica che</div>
+            <div class="name">{{NOME}} {{COGNOME}}</div>
+            <div class="course-info">
+                ha partecipato con successo al corso:<br>
+                <span class="course-name">{{TITOLOEVENTO}}</span>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <div class="date-box">
+                Data: {{DATA}}
+            </div>
+            <div class="signature-box">
+                Firma del Responsabile
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

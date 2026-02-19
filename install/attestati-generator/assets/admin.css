@@ -1,0 +1,320 @@
+/* Attestati Generator - Admin Styles */
+
+.ag-wrap {
+    max-width: 860px;
+    margin: 20px auto;
+}
+
+.ag-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.ag-header .dashicons {
+    font-size: 48px;
+    width: 48px;
+    height: 48px;
+    color: #6366f1;
+    margin-bottom: 8px;
+}
+
+.ag-header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1d2327;
+    margin-bottom: 4px;
+}
+
+.ag-subtitle {
+    color: #646970;
+    font-size: 15px;
+}
+
+/* Cards */
+.ag-card {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.ag-card h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 0;
+    color: #1d2327;
+}
+
+.ag-card h3 {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #1d2327;
+}
+
+/* File Upload */
+.ag-file-group {
+    margin-bottom: 20px;
+}
+
+.ag-file-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px;
+    background: #f6f7f7;
+    border: 2px dashed #c3c4c7;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1d2327;
+}
+
+.ag-file-label:hover {
+    border-color: #6366f1;
+    background: #f0f0ff;
+}
+
+.ag-file-label .dashicons {
+    font-size: 24px;
+    width: 24px;
+    height: 24px;
+    color: #6366f1;
+}
+
+.ag-file-input {
+    display: none;
+}
+
+.ag-file-name {
+    margin-top: 6px;
+    font-size: 13px;
+    color: #646970;
+    padding: 4px 8px;
+}
+
+.ag-file-name.selected {
+    color: #6366f1;
+    font-weight: 600;
+}
+
+/* Format Selector */
+.ag-format-group {
+    margin: 20px 0;
+    padding: 16px;
+    background: #f6f7f7;
+    border-radius: 6px;
+}
+
+.ag-format-title {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #1d2327;
+    font-size: 14px;
+}
+
+.ag-format-options {
+    display: flex;
+    gap: 12px;
+}
+
+.ag-format-option {
+    flex: 1;
+    cursor: pointer;
+}
+
+.ag-format-option input[type="radio"] {
+    display: none;
+}
+
+.ag-format-btn {
+    display: block;
+    text-align: center;
+    padding: 12px 16px;
+    border: 2px solid #c3c4c7;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #50575e;
+    transition: all 0.2s;
+    background: #fff;
+}
+
+.ag-format-option:hover .ag-format-btn {
+    border-color: #6366f1;
+    color: #6366f1;
+}
+
+.ag-format-option input[type="radio"]:checked + .ag-format-btn {
+    border-color: #6366f1;
+    background: #f0f0ff;
+    color: #6366f1;
+    font-weight: 600;
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.15);
+}
+
+/* Buttons */
+.ag-btn-generate {
+    width: 100%;
+    margin-top: 10px !important;
+    font-size: 16px !important;
+    padding: 12px 24px !important;
+    background: #6366f1 !important;
+    border-color: #4f46e5 !important;
+}
+
+.ag-btn-generate:hover {
+    background: #4f46e5 !important;
+}
+
+.ag-btn-generate:disabled {
+    opacity: 0.6 !important;
+    cursor: not-allowed !important;
+}
+
+.ag-btn-download {
+    width: 100%;
+    margin-top: 16px !important;
+    font-size: 16px !important;
+    padding: 12px 24px !important;
+    background: #10b981 !important;
+    border-color: #059669 !important;
+}
+
+.ag-btn-download:hover {
+    background: #059669 !important;
+}
+
+.ag-btn-reset {
+    width: 100%;
+    margin-top: 10px !important;
+    font-size: 14px !important;
+}
+
+/* Info Card */
+.ag-info-card {
+    background: #f8f9ff;
+    border-color: #d4d6f9;
+}
+
+.ag-info-card ol {
+    padding-left: 20px;
+    color: #50575e;
+    font-size: 13px;
+}
+
+.ag-info-card li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.ag-info-card code {
+    background: #e8e8f8;
+    padding: 1px 6px;
+    border-radius: 3px;
+    font-size: 12px;
+    color: #6366f1;
+}
+
+/* Progress */
+.ag-progress-bar-wrap {
+    width: 100%;
+    height: 10px;
+    background: #f0f0f1;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.ag-progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #6366f1, #8b5cf6);
+    width: 0%;
+    transition: width 0.3s;
+    border-radius: 5px;
+}
+
+.ag-progress-text {
+    text-align: center;
+    color: #646970;
+    font-size: 14px;
+}
+
+/* Success */
+.ag-success-card {
+    text-align: center;
+    background: #f0fdf4;
+    border-color: #86efac;
+}
+
+.ag-success-icon {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.ag-success-card h2 {
+    color: #166534;
+}
+
+.ag-success-msg {
+    color: #15803d;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+/* Error */
+.ag-error-card {
+    text-align: center;
+    background: #fef2f2;
+    border-color: #fca5a5;
+}
+
+.ag-error-icon {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.ag-error-card h2 {
+    color: #991b1b;
+}
+
+.ag-error-msg {
+    color: #dc2626;
+    font-size: 14px;
+    margin-bottom: 16px;
+    padding: 12px;
+    background: #fff;
+    border-radius: 6px;
+    border-left: 4px solid #ef4444;
+    text-align: left;
+}
+
+/* Certificate List */
+.ag-cert-list {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+    text-align: left;
+}
+
+.ag-cert-list h3 {
+    margin-bottom: 12px;
+}
+
+.ag-cert-item {
+    padding: 8px 12px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: #50575e;
+}
+
+.ag-cert-item::before {
+    content: '📄 ';
+}

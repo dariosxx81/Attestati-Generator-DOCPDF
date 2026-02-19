@@ -1,0 +1,8 @@
+{
+    "name": "attestati/attestati-php",
+    "description": "Generatore Attestati Automatico - Versione PHP",
+    "require": {
+        "dompdf/dompdf": "^2.0",
+        "phpoffice/phpword": "^1.1"
+    }
+}

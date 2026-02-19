@@ -1,0 +1,15 @@
+{
+    "name": "attestati/attestati-generator-wp",
+    "description": "Attestati Generator - WordPress Plugin",
+    "require": {
+        "php": ">=7.4",
+        "dompdf/dompdf": "^2.0,<3.0",
+        "phpoffice/phpword": ">=1.1.0,<1.3.0"
+    },
+    "config": {
+        "platform": {
+            "php": "7.4.33"
+        },
+        "sort-packages": true
+    }
+}
