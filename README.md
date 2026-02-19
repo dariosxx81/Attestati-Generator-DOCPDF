@@ -20,7 +20,7 @@ Il plugin offre una semplice interfaccia di amministrazione dove è possibile ca
 - PHP 7.4 o superiore
 - Estensioni PHP: `zip`, `xml`, `gd` (per la gestione immagini/pdf)
 
-## Installazione
+## Installazione per WP
 1. Scarica il pacchetto del plugin o clona la repository nella cartella `wp-content/plugins/`.
 2. Assicurati di eseguire `composer install` nella root del plugin per installare le dipendenze necessarie (`phpoffice/phpword`, `dompdf/dompdf`, ecc.).
 3. Attiva il plugin dal pannello di amministrazione di WordPress.
