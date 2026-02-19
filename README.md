@@ -1,8 +1,9 @@
 # Attestati Generator
 
 ## Descrizione
-**Attestati Generator** è un plugin per WordPress che permette di generare massivamente attestati, certificati o documenti personalizzati partendo da un template Word (`.docx`) e un file di dati (`.csv`).
+**Attestati Generator** è una web app e un plugin per WordPress che permette di generare massivamente attestati, certificati o documenti personalizzati partendo da un template Word (`.docx`) e un file di dati (`.csv`).
 
+All'interno della cartella PLUGINWP trovi il plugin pronto da installare per WP.
 Il plugin offre una semplice interfaccia di amministrazione dove è possibile caricare il file dati e il template. Il sistema genererà automaticamente un file per ogni riga del CSV, sostituendo i segnaposto nel template con i dati corrispondenti.
 
 ## Funzionalità Principali
